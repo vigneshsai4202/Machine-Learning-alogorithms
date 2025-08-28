@@ -1,0 +1,61 @@
+Linear Algebra: Day 1 Notes (Machine Learning Foundations)
+Welcome to the foundational concepts of Linear Algebra! This document summarizes key ideas from Jon Krohn's "What Linear Algebra Is — Topic 1 of Machine Learning Foundations" video.
+1. What is Algebra?
+• Algebra is essentially arithmetic that includes non-numerical entities, such as 'X'.
+• Example: Solving 2x + 5 = 25 involves basic algebraic manipulation to find that x = 10.
+2. What is Linear Algebra?
+• Linear Algebra is defined as solving for unknowns within a system of linear equations.
+• Key Characteristic: An equation is not linear if it contains an exponential term (e.g., 2x^2 + 5) or a square root (e.g., sqrt(2x) + 5), as these represent non-linear transformations.
+• It focuses on multiple linear equations where you solve for unknowns (like 'X') simultaneously across several equations.
+3. Practical Example: Sheriff and Bank Robber Problem
+This classic problem illustrates solving a system of linear equations:
+• Scenario: A sheriff (180 km/h) pursues a bank robber (150 km/h) who has a 5-minute head start.
+• Goal: Determine when and where the sheriff catches the robber.
+• Equations:
+    ◦ Bank Robber: D = 2.5T (Distance = 2.5 km/min * Time in minutes)
+    ◦ Sheriff: D = 3(T - 5) (Distance = 3 km/min * (Time in minutes - 5-minute head start penalty))
+• Solution: By setting the equations equal (2.5T = 3(T - 5)), we find that T = 30 minutes and D = 75 kilometers. This is the "crossover point".
+4. Possible Solutions in Linear Algebra
+For a system of linear equations, there are only three possible outcomes:
+1. One Solution: The lines (or planes in higher dimensions) intersect at a single point (e.g., the sheriff catches the robber).
+2. No Solutions: The lines are parallel and never intersect (e.g., sheriff and robber travel at the same speed, but the robber has a head start).
+3. Infinite Solutions: The lines overlap completely (e.g., sheriff and robber travel at the same speed and start at the exact same time).
+• It is impossible for lines to cross multiple times in linear algebra.
+5. Linear Algebra in Machine Learning
+Linear algebra is fundamental to machine learning, often involving systems with many equations and unknowns.
+A. Regression Models
+• Predicting House Prices: A common example is predicting a house price (Y) based on multiple features (variables) like distance to school, number of bedrooms (X values).
+• Model Equation: Y = A * X1 + B * X2 + ... + M * XM + Y-intercept
+• Unknowns: The parameters (A, B, C, M) are the unknowns we solve for. These parameters are consistent across all rows (houses) in the dataset.
+• Scale: Machine learning problems often have thousands of rows (N) (e.g., different houses) and dozens of features (M) (e.g., up to 12 columns for features).
+B. Deep Learning Models
+• Deep learning models can involve millions of rows (e.g., images in a machine vision model) and millions of parameters (columns).
+• Inputs (X): For a machine vision model, inputs could be a vector of 784 pixels per image.
+• Outputs (Y): These inputs are used to predict outcomes, which might be a vector of length 10.
+• Internal Structures: Deep learning models involve weights (matrices) and biases (vectors), which are parameters tuned by algorithms to map inputs to predictions.
+• Tensors: Linear algebra objects in machine learning are often represented as tensors, which can be multi-dimensional (e.g., 1D for vectors, 2D for matrices, or even higher dimensions for convolutional neural networks).
+6. A Brief History of Algebra
+• The term "Algebra" comes from the Arabic word "al-jabr," meaning "completion". This was found in the title of a book by Abu Jafar Muhammad bin Musa al-Khwarizmi (780-850 CE), a medieval Persian mathematician.
+• Al-Khwarizmi is also the namesake of the word "algorithm".
+• Significant early contributions to modern symbolic algebra came from the medieval Islamic Arab Empire, later refined by figures like René Descartes.
+• Earlier forms of algebra existed:
+    ◦ Rhetorical algebra (spoken) by Babylonians (1900 BC).
+    ◦ Linear algebra by Egyptians (1650 BC).
+    ◦ Linear equations by Indian mathematicians (6th century BC).
+    ◦ Geometric algebra by Greeks (400 BC), exemplified by Euclid.
+    ◦ Linear equations by Chinese (250 BC) in "9 Chapters on the Mathematical Art".
+• European mathematics adopted and advanced algebra from the 12th century onwards, eventually becoming the dominant culture carrying its development.
+7. Contemporary Applications of Linear Algebra
+Linear algebra is crucial across many fields, especially in machine learning:
+• Solving for Unknowns: A core application in all machine learning algorithms, including deep learning.
+• Reducing Dimensionality: Techniques like Principal Components Analysis (PCA) use linear algebra to simplify high-dimensional data.
+• Ranking Web Pages: Algorithms like PageRank use eigenvectors to determine the importance of web pages.
+• Recommender Systems: Building recommendation engines (e.g., for movies) can use Singular Value Decomposition (SVD).
+• Natural Language Processing (NLP): Used for modeling topics, semantic analysis, and processing both spoken and written language through techniques like matrix factorization.
+8. Foundational Role in Machine Learning Foundations Series
+This "Intro to Linear Algebra" subject is foundational for:
+• Linear Algebra 2: Matrix Operations (covering eigenvectors, SVD, PCA)
+• Calculus 1 & 2 (derivatives, partial derivatives, integrals)
+• Probability and Information Theory
+• Intro to Statistics
+• Optimization (the final class, tying everything together for modern ML algorithms)
