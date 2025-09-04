@@ -1,0 +1,30 @@
+Notes on Tensors
+• Fundamental Definition:
+    ◦ Tensors are the fundamental building block of linear algebra for machine learning.
+    ◦ They are described as a machine learning-specific generalization of vectors and matrices to any number of dimensions. The GeeksforGeeks source similarly defines a tensor as a multi-dimensional array that is the fundamental data structure in frameworks like TensorFlow.
+• Tensors and TensorFlow:
+    ◦ The term "tensor" is in the name of TensorFlow, one of the most popular libraries for deep learning.
+    ◦ In TensorFlow, tensors are the primary objects used to define models, train them, and perform operations. A tensor in TensorFlow is an object with a specific shape (its dimensions), rank (the number of dimensions), data type (like float32 or int32), and the device (CPU or GPU) it is on.
+• Types of Tensors by Dimension:
+    ◦ 0-Dimensional Tensor (Scalar): This is a single value that has magnitude only. The GeeksforGeeks source gives examples like 5 or -3.14.
+    ◦ 1-Dimensional Tensor (Vector): This is a one-dimensional, linear array of values. An example would be .
+    ◦ 2-Dimensional Tensor (Matrix): This is a two-dimensional array, like a flat table. The GeeksforGeeks source compares it to a table with rows and columns, such as [,].
+    ◦ Higher-Dimensional Tensors: Tensors can exist in any number of dimensions, such as a 3-tensor (which can be pictured as a cube) or an n-tensor. These higher-dimensional tensors are difficult to visualize. The GeeksforGeeks source provides a practical example: a batch of color images can be represented as a 4D tensor with a shape of [batch_size, height, width, channels]
+
+
+
+    Scalar Tensors
+• Definition: Scalars are a type of tensor characterized by having no dimensions. They represent a single numeric value.
+• Notation: They are typically denoted in lowercase and italics, for example, x.
+• Data Types: Like all tensors in machine learning libraries, scalars have a data type, which can be specified explicitly or not. Common types include integers and 32-bit floats. When an integer and a float are used together in an operation, the result typically defaults to the float type.
+Libraries for Tensors
+The video discusses two of the most popular libraries for "automatic differentiation," which is a key concept for training machine learning models: PyTorch and TensorFlow.
+PyTorch
+• Pythonic Design: PyTorch tensors are designed to feel and behave just like NumPy arrays, making them intuitive for Python users.
+• GPU Advantage: A key advantage of PyTorch tensors over NumPy arrays is that they can be easily used for operations on GPUs (Graphics Processing Units), which are widely used for training deep learning models.
+• Ease of Use: The speaker notes a preference for PyTorch, describing it as more "fun to use" because it behaves as expected and has easier-to-follow stack traces compared to TensorFlow. Printouts are also cleaner.
+TensorFlow
+• Core Concept: Tensors in TensorFlow are created with a wrapper, with the Variable method being the most popular and common type.
+• Community and Production: TensorFlow is an older library with a much larger community. It has more associated libraries for production applications, such as training models on many servers or serving models to clients on web browsers or low-power devices like phones.
+• Disadvantages: The speaker finds TensorFlow a "bit of a chore" and "less fun to play around with" due to extra steps and wrappers needed for operations. The printouts can be "uglier," which is partly a result of the library being ported to Python from C++.
+• Interoperability: TensorFlow tensors can be easily converted to and from NumPy arrays.
