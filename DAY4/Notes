@@ -1,0 +1,19 @@
+ Definition: A vector is a one-dimensional tensor. It is essentially a one-dimensional array of numbers. Vectors are a fundamental data structure in TensorFlow and linear algebra.
+ Characteristics:
+    ◦ Rank and Dimensions: A vector is a tensor with a rank of 1, meaning it has one dimension.
+    ◦ Elements: The elements within a vector are individual numbers called scalars. These elements are arranged in a specific order and can be accessed by their index. For example, the second element of a vector x is denoted as x₂.
+    ◦ Notation: Vectors are typically denoted in lowercase, italics, and bold type, which distinguishes them from scalars that are not bold.
+Representation in Space:
+    ◦ Vectors can be thought of as representing a point in space.
+    ◦ A vector with a length of two represents a location in a two-dimensional space (like a matrix).
+    ◦ A vector with a length of three represents a location in a three-dimensional cube.
+    ◦ Following this pattern, a vector of any length n represents a location in an n-dimensional space
+ Vector Transposition:
+    ◦ This is a common operation that transforms a vector from a row to a column, or vice versa.
+    ◦ It is denoted by a capital "T" superscript on the vector.
+    ◦ During transposition, the elements of the vector and their order remain unchanged; only the orientation is altered.
+• Special Types of Vectors:
+    ◦ Zero vectors are vectors that consist entirely of zeros.
+• Use in Machine Learning:
+    ◦ In machine learning models, vectors can represent inputs, such as a collection of features for a dataset or the pixels from an image.
+    ◦ The weights and biases within a neural network are also represented by tensors, which can include vectors
