@@ -1,0 +1,24 @@
+A vector can be thought of as representing a point in space, but it can also represent a particular magnitude and direction through space, tracing from the origin to that point. Norms are a class of functions used to quantify the magnitude, or length, of a vector.
+L2 Norm
+• The most common and important norm is the L2 norm.
+• To calculate it, you square each element in the vector, sum those squared elements, and then take the square root of that sum.
+• The L2 norm measures the simple, or Euclidean, distance from the origin (a vector of all zeros). This is the kind of distance we use in the real world, like measuring something with a ruler.
+• Because it's the most common norm in machine learning, the subscript '2' in its notation can be omitted, and it will still be assumed to be the L2 norm.
+Unit Vectors
+• A unit vector is a special type of vector whose length, or L2 norm, is equal to 1.
+L1 Norm
+• The L1 norm is another common norm in machine learning.
+• It is calculated by taking the absolute value of every element in the vector and then summing those absolute values.
+• An interesting property of the L1 norm is that it varies linearly at all locations, both near and far from the origin. It is particularly useful in situations where the differences between zero and non-zero values are important.
+• The same vector will have a different length depending on which norm is used to measure it.
+Squared L2 Norm
+• The squared L2 norm is similar to the L2 norm, but it omits the final step of taking the square root. You simply square each element and sum them together.
+• This norm is computationally cheaper to use than the regular L2 norm.
+• The derivative of the squared L2 norm for a single element requires only that element, whereas the derivative for the L2 norm requires information about the entire vector. Derivatives are used to train many machine learning algorithms.
+• The downside of the squared L2 norm is that it grows slowly near the origin, so it cannot be used if you need to distinguish between zero and near-zero values, which is the opposite of the L1 norm's strength.
+Max Norm
+• The max norm, which can be denoted with an infinity sign, simply returns the absolute value of the largest magnitude element in the vector.
+• This norm occurs reasonably frequently in machine learning, though probably less often than the L1, L2, and squared L2 norms.
+Lp Norm and Applications
+• All the norms covered (L1, L2, squared L2, and max norm) are specific cases of a generalized Lp norm.
+Norms, particularly the L1 and L2 norms, are very commonly used in machine learning to regularize objective functions. If you are familiar with machine learning, you may know this as L1 or L2 penalties in regression.
