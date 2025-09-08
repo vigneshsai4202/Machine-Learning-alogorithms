@@ -1,0 +1,9 @@
+Tensor transposition involves changing the arrangement of elements within a tensor.
+• The easiest kind of tensor to transpose is a zero-dimensional tensor, or scalar, where its transpose is simply itself.
+• For a vector, transposition converts a column vector to a row vector, and vice versa
+In matrix transposition, the axes of the matrix are flipped over its main diagonal. The main diagonal runs from the top-left to the bottom-right corner.
+• An element originally at the ith row and jth column position will be moved, so what was column j becomes row j, and vice versa.
+• Graphically, the top-left element of a matrix remains in place during transposition, while a top-right element becomes a bottom-left element
+ Transposing tensors is easy in popular tensor libraries like NumPy, TensorFlow, and PyTorch.
+• NumPy and PyTorch use a simple .T operator for transposition.
+• TensorFlow requires calling a specific tensorflow.transpose operation

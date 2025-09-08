@@ -1,0 +1,50 @@
+• Vectors Norms & Unit Vectors
+    ◦ Previously introduced: vector norms (quantify magnitude) and unit vectors (special case with L2 norm equal to one).
+• Basis Vectors
+    ◦ A set of vectors that can be scaled to represent any vector in a given vector space.
+    ◦ Typically, these are unit vectors along the axes of a vector space.
+    ◦ Example (2D space): Vectors i (from (0,0) to (1,0)) and j (from (0,0) to (0,1)).
+    ◦ These basis vectors (i and j) can be scaled and added to describe any vector in the 2D space (e.g., vector v at (1.5, 2) is 1.5i + 2j).
+    ◦ Basis vectors are an example of orthonormal vectors.
+• Orthogonal Vectors
+    ◦ Sets of vectors where their dot product is zero.
+    ◦ Assuming both vectors have non-zero lengths (non-zero norms), this means they are at a 90-degree angle to each other.
+    ◦ In an n-dimensional space, there can be at most n mutually orthogonal vectors (assuming non-zero length). For example, in 2D, a maximum of two mutually orthogonal vectors.
+• Orthonormal Vectors
+    ◦ A special case of orthogonal vectors.
+    ◦ They are both orthogonal (at a 90-degree angle) AND they all have a unit norm (a Euclidean distance length of one).
+    ◦ Basis vectors are an example of orthonormal vectors because they are orthogonal and have unit norm
+
+Matrices (Two-Dimensional Tensors)
+    ◦ Matrices are two-dimensional arrays of numbers.
+    ◦ They are a type of tensor, building on zero-dimensional scalars and one-dimensional vectors.
+    ◦ A matrix is also referred to as a rank 2 tensor.
+    ◦ Rank 0 is a scalar, rank 1 is a vector, and rank 2 is a matrix.
+• Matrix Notation
+    ◦ Matrices are denoted in uppercase, italic, and bold letters, for example, X. This contrasts with vectors, which are lowercase italic and bold.
+    ◦ The dimensions of a matrix are noted with height (rows) prioritized before width (columns).
+    ◦ For a matrix X with three rows and two columns, its shape is (3, 2), enclosed in round brackets.
+    ◦ Individual scalar elements of a matrix are denoted in uppercase italics only (unbolded).
+
+General Tensor Notation
+    ◦ This generalizes notation for tensors with any number of dimensions.
+    ◦ This includes high-dimensional tensors, which are common in machine learning models.
+    ◦ Notation: Tensors are represented using uppercase bold italics and a sans-serif font.
+        ▪ This contrasts with matrices, which use an uppercase bold italic serif font.
+        ▪ "Sans-serif" means "without" the decorative extra bits on letter.
+
+High-Dimensional Tensors (e.g., Rank 4 Tensors)
+    ◦ A rank 4 tensor is a common input type for machine vision models, particularly in deep learning architectures.
+    ◦ These four dimensions often represent:
+        1. The number of images in a training batch (e.g., 32 images).
+        2. The height of the image in pixels (e.g., 28 pixels for MNIST digits).
+        3. The width of the image in pixels (e.g., 28 pixels for MNIST digits).
+        4. The number of color channels.
+            • Monochromatic (black and white) images, like MNIST digits, typically have one color channel.
+            • Full-color images (RGB) typically require three color channels (red, green, blue).
+    ◦ High-dimensional tensors can be created using libraries like PyTorch and TensorFlow (e.g., a 4-tensor with dimensions 32, 28, 28, 3)
+
+
+
+
+     The next segment will cover common tensor operations.
