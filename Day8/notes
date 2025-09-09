@@ -1,0 +1,11 @@
+ Two algebraic methods for solving linear systems to find the unknown variables. These methods are presented to provide a more intimate understanding of how to solve linear systems on paper before delving into computational solutions using matrices later in the series.
+ • Substitution Method
+    ◦ This is the first algebraic method covered for solving linear systems.
+    ◦ It is particularly useful when there is a variable in the system of equations with a coefficient of one.
+    ◦ The core idea involves substituting one variable in an equation with what it is equal to from another equation in the system.
+    ◦ Once one variable is solved, finding the other is typically straightforward.
+ Elimination Method
+    ◦ This is presented as a second method for solving linear systems algebraically, useful in scenarios where substitution might not be the best fit.
+    ◦ It is generally the best option if no variable in the system has a coefficient of one.
+    ◦ The method takes advantage of the addition property of equations to eliminate variables.
+    ◦ If necessary, one or both of the equations can be multiplied to make the elimination of a variable possible
